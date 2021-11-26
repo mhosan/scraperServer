@@ -23,7 +23,7 @@ preciosControlador.getVariaciones = function (producto) {
             }
         ]).exec()
             .then(data => {
-                resolve({ 'status': 200, 'message': 'get producto', 'data': data });
+                resolve({ 'status': 200, 'message': 'get productos ok', 'data': data });
             })
             .catch(err => {
                 reject({ 'status': 404, 'message': 'err:-' + err });
