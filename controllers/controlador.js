@@ -34,7 +34,7 @@ preciosControlador.getVariaciones = function (producto) {
 //get sin parametros:
 preciosControlador.getPrecios = function () {
     return new Promise((resolve, reject) => {
-        const totalRegistrosMostrar = 100;
+        const totalRegistrosMostrar = 120;
         supermercados.count().exec()
             .then(count => {
                 const totalSkip = count - totalRegistrosMostrar;
